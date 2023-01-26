@@ -6,7 +6,7 @@ institute: "UCL,CASA"
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
-    css: ["xaringan-themer.css","customer.css"]
+    css: ["xaringan-themer.css","custom.css"]
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -22,11 +22,10 @@ style_mono_accent(base_color = "#43418A")
 
 # What is OLI-2?
 ### Operational Land Imager 2 
-
 .pull-left[
 - A remote sensing instrument aboard **Landsat 9**
 
-- A copy of **Landsat 8’s OLI**
+- A copy of **Landsat 8’s OLI**, but improved
 
 - It captures observations of the Earth’s surface in visible, near-infrared, and shortwave-infrared bands.
 
@@ -34,7 +33,7 @@ style_mono_accent(base_color = "#43418A")
 ]
 
 .pull-right[
-```{r echo=FALSE,out.width='70%'}
+```{r echo=FALSE}
 knitr::include_graphics('img/OLI-2-sketch.png')
 ```
 
@@ -45,7 +44,7 @@ knitr::include_graphics('img/OLI-2-sketch.png')
 #Application 1
 ### According to 9 spectral bands OLI-2 provides, it has various applications.
 
-#### Environmental monitoring of the coastal zone:
+#### Coastal and Aerosol Studies:
 - Band 1 **Coastal/Aerosol** (0.43 - 0.45 µm) 30-m
 
 #### Ground Objects Identification of True Color Images:
@@ -55,7 +54,7 @@ knitr::include_graphics('img/OLI-2-sketch.png')
 ---
 #Application 2
 
-#### Vegetation Information Extraction：
+#### Biomass Content and Shorelines：
 - Band 5 **Near-Infrared** (0.85 - 0.88 µm) 30-m
 
 #### Drought Monitoring, Fire Monitoring and Minearal Informtion Extraction:
