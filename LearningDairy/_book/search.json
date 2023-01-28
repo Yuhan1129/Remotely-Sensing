@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "Week1.html",
+    "href": "Week1.html",
+    "title": "2  Hello Remote Sensing",
+    "section": "",
+    "text": "3 An Introduction to Remote Sensing"
+  },
+  {
+    "objectID": "Week1.html#summary",
+    "href": "Week1.html#summary",
+    "title": "2  Hello Remote Sensing",
+    "section": "2.1 Summary",
+    "text": "2.1 Summary"
+  },
+  {
+    "objectID": "Week1.html#application",
+    "href": "Week1.html#application",
+    "title": "2  Hello Remote Sensing",
+    "section": "2.2 Application",
+    "text": "2.2 Application"
+  },
+  {
+    "objectID": "Week1.html#reflection",
+    "href": "Week1.html#reflection",
+    "title": "2  Hello Remote Sensing",
+    "section": "2.3 Reflection",
+    "text": "2.3 Reflection"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "Week2-portfolio.html",
+    "href": "Week2-portfolio.html",
+    "title": "3  Portfolio",
+    "section": "",
+    "text": "see as:\nhttps://yuhan1129.github.io/Remotely-Sensing/presentation/OLI.html"
+  },
+  {
+    "objectID": "Week3-corrections.html",
+    "href": "Week3-corrections.html",
+    "title": "4  Week3-corrections",
+    "section": "",
+    "text": "5 3. Corrections"
+  },
+  {
+    "objectID": "Week3-corrections.html#summary",
+    "href": "Week3-corrections.html#summary",
+    "title": "4  Corrections",
+    "section": "4.1 Summary",
+    "text": "4.1 Summary"
+  },
+  {
+    "objectID": "Week3-corrections.html#application",
+    "href": "Week3-corrections.html#application",
+    "title": "4  Corrections",
+    "section": "4.2 Application",
+    "text": "4.2 Application"
+  },
+  {
+    "objectID": "Week3-corrections.html#reflection",
+    "href": "Week3-corrections.html#reflection",
+    "title": "4  Corrections",
+    "section": "4.3 Reflection",
+    "text": "4.3 Reflection"
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "5  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "LearningDairy",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+  }
+]
