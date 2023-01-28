@@ -1,2 +1,2 @@
 # Remotely-Sensing
-rm
+Learning Dairy for RS
