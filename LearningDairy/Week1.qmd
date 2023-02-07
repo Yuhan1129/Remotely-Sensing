@@ -1,9 +1,79 @@
 ---
-title: "Hello Remote Sensing"
+title: "Introduction to Remote Sensing"
 editor: visual
 ---
 
 ## Summary
+
+### Learning Objectives
+
+1.  Have a basic idea of remote sensing
+
+2.  
+
+### Remote Sensors
+
+-   Passive sensors systems
+
+-   Active sensors systems
+
+    SAR
+
+### Electromagnetic waves
+
+#### Basic Information
+
+-   wave length
+
+-   velocity
+
+-   frequency
+
+#### Related jargon
+
+-   Electromagnetic radiation(EMR)
+
+-   radiant energy
+
+-   radiant flux
+
+-   shortwave radiation
+
+-   solar irradiacne
+
+-   exitance(emmittance)
+
+#### Interactions with Earth
+
+-   surface
+
+    BRDF
+
+    Polarization
+
+    Fluorensence
+
+-   atmospheric
+
+    Rayleigh
+
+    Mie
+
+    Non selective
+
+### Remote Sensing Data
+
+#### Data formats
+
+#### Four resolutions
+
+Spatial Resolution
+
+Spectral Resolution
+
+Radiometric Resolution
+
+Temporal Resolution
 
 ## Application
 

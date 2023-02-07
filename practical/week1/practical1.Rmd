@@ -1,0 +1,15 @@
+---
+title: "Week1"
+output: html_document
+date: "2023-01-28"
+---
+
+```{r}
+library(sf)
+library(terra)
+library(raster)
+```
+
+```{r}
+
+```
