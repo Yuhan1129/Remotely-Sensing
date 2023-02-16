@@ -1,0 +1,32 @@
+---
+title: "week3"
+output: html_document
+date: "2023-02-09"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(terra)
+library(raster)
+library(RStoolbox)
+library(exactextractr)
+library(tidyverse)
+library(fs)
+library(rgdal)
+library(here)
+```
+
+```{r}
+mtlFile <- ("Data/LC09_L2SP_191031_20221101_20221103_02_T1/LC09_L2SP_191031_20221101_20221103_02_T1_MTL.txt")
+
+metaData <- readMeta(mtlFile, raw = TRUE)
+summary(metaData)
+lsatMeta <- stackMeta(mtlFile)
+
+l9_boa_ref <- radCor(lsatMeta, metaData, method = "dos")
+
+lsat_rad <- radCor(lsatMeta, metaData = metaData, method = "rad")
+```
