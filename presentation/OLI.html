@@ -4,8 +4,10 @@
     <title>OLI-2</title>
     <meta charset="utf-8" />
     <meta name="author" content="Yuhan Liao" />
-    <meta name="date" content="2023-01-26" />
+    <meta name="date" content="2023-02-18" />
     <script src="libs/header-attrs-2.16/header-attrs.js"></script>
+    <link href="libs/panelset-0.2.6/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset-0.2.6/panelset.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="custom.css" type="text/css" />
   </head>
@@ -23,7 +25,7 @@ class: center, middle, inverse, title-slide
 ### UCL,CASA
 ]
 .date[
-### 2023-01-26
+### 2023-02-18
 ]
 
 ---
@@ -32,14 +34,12 @@ class: center, middle, inverse, title-slide
 
 
 
-# What is OLI-2?
+## What is OLI-2?
 ### Operational Land Imager 2 
 .pull-left[
-- A remote sensing instrument aboard **Landsat 9**
+- A remote sensing instrument aboard **Landsat 9**, **a copy of OLI** in Landsat 8.
 
-- A copy of **Landsat 8’s OLI**, but improved
-
-- It captures observations of the Earth’s surface in visible, near-infrared, and shortwave-infrared bands.
+- It captures observations of the Earth’s surface in **visible, near-infrared, and shortwave-infrared bands**.
 
 - It collects data in 15-m panchromatic and 30-m multispectral spatial resolutions over a 14-bit dynamic range.
 ]
@@ -49,45 +49,83 @@ class: center, middle, inverse, title-slide
 
 .small[Diagram of OLI-2. Source:[NASA](https://landsat.gsfc.nasa.gov/satellites/landsat-9/landsat-9-instruments/oli-2-design/)
 ]]
+---
+## Improvements 1
+#### Higher radiometric resolution
+OLI-2's 14-bit radiometric resolution enables to detect more subtle differences, especially over darker areas such as water or dense forests. 
+* 14 bit = 16,384 shades
+* 12 bit = 4,096 shades
+&lt;img src="img/bit.png" width="80%" style="display: block; margin: auto;" /&gt;
+.small[
+Source: [USGS](https://earthexplorer.usgs.gov/)
+]
+---
+## Improvement 2
+#### Spectral Characterization
+- Goddard Laser for Absolute Measurement of Radiance (**GLAMR**), replaced the traditional monochromator based approach
+- **In-band and out-of-band spectral response characterization** of all OLI-2 detectors at the integrated instrument level, versus about 15% of the detectors in-band only for OLI. 
+
+#### Non-linearity Characterization
+- **20 in-band radiance-controlled radiance levels** were measured for all 9 OIL-2 bands
+
+#### Spatial Characterization
+- A **continuous** scanning approach
 
 ---
-#Application 1
-### According to 9 spectral bands OLI-2 provides, it has various applications.
-
-#### Coastal and Aerosol Studies:
-- Band 1 **Coastal/Aerosol** (0.43 - 0.45 µm) 30-m
-
-#### Ground Objects Identification of True Color Images:
-- Band 2 **Blue** (0.450 - 0.51 µm) 30-m
-- Band 3 **Green** (0.53 - 0.59 µm) 30-m
-- Band 4 **Red** (0.64 - 0.67 µm) 30-m
+## Application - Water Body Extraction
+### Lake Area Extraction in  Qinghai Tibet Plateau
+&lt;img src="img/application-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+.small[Image acquisition and linear regression. (a) Landsat-8 image; (b) Landsat-9 image; (c) linear regression of NDVI; and (d) linear regression of reﬂectance.
+Source:[Li et al., 2022](https://www.mdpi.com/2072-4292/14/18/4612)
+]
 ---
-#Application 2
+## Application - Water Body Extraction
 
-#### Biomass Content and Shorelines：
-- Band 5 **Near-Infrared** (0.85 - 0.88 µm) 30-m
+#### Comparison of the overall accuracy of water extraction of Landsat-8 and Landsat-9
+&lt;img src="img/application-2.png" width="1803" style="display: block; margin: auto;" /&gt;
+- Landsat-9, similar to Landsat-8, can recognize plateau 
+waterbodies well. 
 
-#### Drought Monitoring, Fire Monitoring and Minearal Informtion Extraction:
-* Band 6 **SWIR 1** (1.57 - 1.65 µm) 30-m
-* Band 7 **SWIR 2** (2.11 - 2.29 µm) 30-m
-
-#### Ground Objects Identification and Data Fusion
-* Band 8 **Panchromatic(PAN)** (0.50 - 0.68 µm) 15-m
-
-#### Cirrus Detection and Data Quality Evaluation
-* Band 9 **Cirrus** (1.36 - 1.38 µm) 30-m
+- Although the radiometric resolution of Landsat-9 is improved to 14 bits, it has **no apparent advantage** in relatively simple tasks, such as waterbody recognition.
 ---
-#Reflection
+### Application 2 - Land use Land Cover Classification
+**OLI-2's Performance for LULC classification is uncertain**
 
-### Higher radiometric resolution
+.panelset[
+.panel[.panel-name[Better Performance]
+- More accurate in distinguishing dense and sparse vegetation as well as darker and lighter objects(Shahfahad et al., 2022).
+- Better determined in artificial surfaces(Ghasempour, Sekertekin and Kutoglu, 2023).
+&lt;img src="img/application-5.jpeg" width="35%" style="display: block; margin: auto;" /&gt;
+.small[Classified LULC maps using multispectral bands of (a)OLI and (b)OLI-2. Source:[Shahfahad et al., 2022](https://www.tandfonline.com/doi/full/10.1080/10106049.2022.2152496?scroll=top&amp;needAccess=true&amp;role=tab)]
+]
 
-- **14-bit** quantization increased from 12-bits for Landsat 8 
+.panel[.panel-name[No Better Performance]
+- OLI and OLI-2 both perform well in agriculture- and forest-dominated landscapes.
+&lt;img src="img/application-4.png" width="2176" style="display: block; margin: auto;" /&gt;
+.small[Source: Saralioglu and Vatandaslar, 2022]
+]
+]
+---
+##Reflection
 
-- Allowing sensors to detect **more subtle differences**, especially over **darker areas** such as water or dense forests.
 
-### Both internal calibration sources 
+---
+##Reference
+.small[
+Ghasempour, F., Sekertekin, A. and Kutoglu, S.H., 2023. How Landsat 9 IS Superior to Landsat 8: Comparative Assessment of Land Use Land Cover Classification and Land Surface Temperature. ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences, 14W1, pp.221–227.
 
-- Ensure **radiometric accuracy and stability**, as well as the ability to perform **solar and lunar calibrations**.
+Li, X., Zhang, D., Jiang, C., Zhao, Y., Li, H., Lu, D., Qin, K., Chen, D., Liu, Y., Sun, Y. and Liu, S., 2022. Comparison of Lake Area Extraction Algorithms in Qinghai Tibet Plateau Leveraging Google Earth Engine and Landsat-9 Data. Remote Sensing, 14(18), p.4612.
+
+Lulla, K., Nellis, M.D., Rundquist, B., Srivastava, P.K. and Szabo, S., 2021. Mission to earth: LANDSAT 9 will continue to view the world. Geocarto International, 36(20), pp.2261–2263. 
+
+Masek, J.G., Wulder, M.A., Markham, B., McCorkel, J., Crawford, C.J., Storey, J. and Jenstrom, D.T., 2020. Landsat 9: Empowering open science and applications through continuity. Remote Sensing of Environment, 248, p.111968. 
+
+Saralioglu, E. and Vatandaslar, C., 2022. Land use/land cover classification with Landsat-8 and Landsat-9 satellite images: a comparative analysis between forest- and agriculture-dominated landscapes using different machine learning methods. Acta Geodaetica et Geophysica, 57(4), pp.695–716. 
+
+Shahfahad, Talukdar, S., Naikoo, M.W., Rahman, A., Gagnon, A.S., Islam, A.R.M.T. and Mosavi, A., 2022. Comparative Evaluation of Operational Land Imager sensor on board Landsat 8 and Landsat 9 for Land use Land Cover Mapping over a Heterogeneou Landscape. Geocarto International, 0(ja), pp.1–21. 
+
+]
+
 
 
 
