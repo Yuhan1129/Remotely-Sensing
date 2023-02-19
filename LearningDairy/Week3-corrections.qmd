@@ -5,6 +5,92 @@ editor: visual
 
 ## Summary
 
+### Correction
+
+#### Geometric Correction
+
+**Causes:** view angle(off-nadir, off directly down), topography, wind, rotation of the earth
+
+**Solution:**
+
+-   Steps:
+
+1.  Find Ground Control Points(GCP) to match known points in the incorrect image and a reference correct dataset.
+
+2.  Then use a transformation algorithm to model the actual coordinates, like linear regression with distorted x or y as the dependent or independent.
+
+3.  Later, plot these and minimize the RMSE, whereas the lower RMSE the better model fits.
+
+4.  Last, resample the final raster because the value of pixels in raster might shift slightly, and the common resample data including Nearest Neighbor, Linear, Cubic and Cubic Spline.
+
+-   Two Methods:
+
+[*Forward Mapping*]{.underline}: Input to output
+
+There would be points in the incorrect map falling outside the boundary of the correct map.
+
+[*Backward Mapping*]{.underline}: Output to input
+
+This method completely avoids problems with gaps and overlaps.
+
+#### Atmospheric Correction
+
+**Causes:** atmospheric scattering and topographic attenuation
+
+Tips: There are both necessary and unnecessary atmospheric corrections. We only need to do the necessary atmospheric corrections.
+
+**Solution:**
+
+-   Types:
+
+1.  Relative correction
+
+2.  Absolute correction
+
+3.  Empirical line correction
+
+#### Orthorectification Correction
+
+**Causes:**
+
+**Solution:**
+
+Cosine correction
+
+Minnaert correction
+
+Statistical Empirical correction
+
+C Correction (advancing the Cosine)
+
+#### Radiometric Calibration
+
+**Causes:**
+
+**Solution:**
+
+**Jargon**
+
+### Data Joining and Enhancement
+
+Data Joining
+
+Mosaicking
+
+#### Image Enhancement
+
+contrast enhancement
+
+ratio
+
+filtering
+
+pca
+
+texture
+
+fusion
+
 ## Application
 
 ## Reflection

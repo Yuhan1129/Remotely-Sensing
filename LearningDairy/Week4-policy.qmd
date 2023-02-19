@@ -3,8 +3,12 @@ title: "Policy"
 editor: visual
 ---
 
-# Summary
+## Summary
 
-# Application
+The combination of spectral bands
 
-# Reflection
+Many cities have published policies for city sustainable development, however,
+
+## Application
+
+## Reflection

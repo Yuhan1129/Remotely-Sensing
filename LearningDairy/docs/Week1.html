@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>LearningDairy - 2&nbsp; Introduction to Remote Sensing</title>
+<title>LearningDairy - 1&nbsp; Introduction to Remote Sensing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -31,7 +50,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./Week2-portfolio.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Remote Sensing</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Remote Sensing</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -101,27 +120,27 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="./Week1.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Remote Sensing</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Week1.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Remote Sensing</span></a>
+  <a href="./Week2-portfolio.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Portfolio</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Week2-portfolio.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Portfolio</span></a>
+  <a href="./Week3-corrections.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Corrections</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Week3-corrections.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Corrections</span></a>
+  <a href="./Week4-policy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Policy</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Week4-policy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Policy</span></a>
+  <a href="./Week5-GEE.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">GEE</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -143,15 +162,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">2.1</span>  Summary</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">1.1</span>  Summary</a>
   <ul class="collapse">
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives"><span class="toc-section-number">2.1.1</span>  Learning Objectives</a></li>
-  <li><a href="#remote-sensors" id="toc-remote-sensors" class="nav-link" data-scroll-target="#remote-sensors"><span class="toc-section-number">2.1.2</span>  Remote Sensors</a></li>
-  <li><a href="#electromagnetic-waves" id="toc-electromagnetic-waves" class="nav-link" data-scroll-target="#electromagnetic-waves"><span class="toc-section-number">2.1.3</span>  Electromagnetic waves</a></li>
-  <li><a href="#remote-sensing-data" id="toc-remote-sensing-data" class="nav-link" data-scroll-target="#remote-sensing-data"><span class="toc-section-number">2.1.4</span>  Remote Sensing Data</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives"><span class="toc-section-number">1.1.1</span>  Learning Objectives</a></li>
+  <li><a href="#remote-sensors" id="toc-remote-sensors" class="nav-link" data-scroll-target="#remote-sensors"><span class="toc-section-number">1.1.2</span>  Remote Sensors</a></li>
+  <li><a href="#electromagnetic-waves" id="toc-electromagnetic-waves" class="nav-link" data-scroll-target="#electromagnetic-waves"><span class="toc-section-number">1.1.3</span>  Electromagnetic waves</a></li>
+  <li><a href="#remote-sensing-data" id="toc-remote-sensing-data" class="nav-link" data-scroll-target="#remote-sensing-data"><span class="toc-section-number">1.1.4</span>  Remote Sensing Data</a></li>
   </ul></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">2.2</span>  Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">2.3</span>  Reflection</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">1.2</span>  Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">1.3</span>  Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -160,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Remote Sensing</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Remote Sensing</span></h1>
 </div>
 
 
@@ -175,29 +194,29 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="summary" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.1</span> Summary</h2>
-<section id="learning-objectives" class="level3" data-number="2.1.1">
-<h3 data-number="2.1.1" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">2.1.1</span> Learning Objectives</h3>
+<section id="summary" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">1.1</span> Summary</h2>
+<section id="learning-objectives" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">1.1.1</span> Learning Objectives</h3>
 <ol type="1">
 <li><p>Have a basic idea of remote sensing</p></li>
 <li><p>Have a understanding of remote sensing data</p></li>
 </ol>
 </section>
-<section id="remote-sensors" class="level3" data-number="2.1.2">
-<h3 data-number="2.1.2" class="anchored" data-anchor-id="remote-sensors"><span class="header-section-number">2.1.2</span> Remote Sensors</h3>
+<section id="remote-sensors" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="remote-sensors"><span class="header-section-number">1.1.2</span> Remote Sensors</h3>
 <p>A remote sensor system it the instrument designed to detect and measure physical phenomena or environmental conditions from a distance. Remote sensors could be divided into two types as follow:</p>
 <ul>
 <li><p>Passive sensors systems: receive reflected energy</p></li>
 <li><p>Active sensors systems: emit electromagnetic waves, such as SAR</p></li>
 </ul>
 </section>
-<section id="electromagnetic-waves" class="level3" data-number="2.1.3">
-<h3 data-number="2.1.3" class="anchored" data-anchor-id="electromagnetic-waves"><span class="header-section-number">2.1.3</span> Electromagnetic waves</h3>
+<section id="electromagnetic-waves" class="level3" data-number="1.1.3">
+<h3 data-number="1.1.3" class="anchored" data-anchor-id="electromagnetic-waves"><span class="header-section-number">1.1.3</span> Electromagnetic waves</h3>
 <p>The electromagnetic waves are used by remote sensors to detect and measure physical phenomena, also the carriers of information.</p>
-<p>The basic properties of electromagnetic waves include wave length(<span class="math inline">\(\lambda\)</span>), velocity( <span class="math inline">\(c\)</span>,rate of oscillation), frequency(<span class="math inline">\(v = 3\times10^8 m/s\)</span>). They follow the relationship that <span class="math inline">\(\lambda = c/v\)</span>.</p>
-<section id="related-jargon" class="level4" data-number="2.1.3.1">
-<h4 data-number="2.1.3.1" class="anchored" data-anchor-id="related-jargon"><span class="header-section-number">2.1.3.1</span> Related jargon</h4>
+<p>The basic properties of electromagnetic waves include wave length(<span class="math inline">\(\lambda\)</span>), velocity( <span class="math inline">\(c\)</span>, rate of oscillation), frequency(<span class="math inline">\(v = 3\times10^8 m/s\)</span>). They follow the relationship that <span class="math inline">\(\lambda = c/v\)</span>.</p>
+<section id="related-jargon" class="level4" data-number="1.1.3.1">
+<h4 data-number="1.1.3.1" class="anchored" data-anchor-id="related-jargon"><span class="header-section-number">1.1.3.1</span> Related jargon</h4>
 <p>There are also some jargon about electromagnetic waves we need to know:</p>
 <ul>
 <li><p>Electromagnetic radiation(EMR): waves of an electromagnetic field, travel through space and carry radiant</p></li>
@@ -208,41 +227,80 @@ ul.task-list li input[type="checkbox"] {
 <li><p>exitance/emmittance: energy leaving a surface per unit per unit time</p></li>
 </ul>
 </section>
-<section id="interactions-with-earth" class="level4" data-number="2.1.3.2">
-<h4 data-number="2.1.3.2" class="anchored" data-anchor-id="interactions-with-earth"><span class="header-section-number">2.1.3.2</span> Interactions with Earth</h4>
+<section id="interactions-with-earth" class="level4" data-number="1.1.3.2">
+<h4 data-number="1.1.3.2" class="anchored" data-anchor-id="interactions-with-earth"><span class="header-section-number">1.1.3.2</span> Interactions with Earth</h4>
+<p>When the electromagnetic waves travel to reach the ground stations or remote sensors, they would be affected by Earth’s atmosphere or surface.Thus, it’s important to know how would the Earth’s surface or atmosphere would change the radiant energy.</p>
+<section id="interactions-with-earths-atmosphere" class="level5" data-number="1.1.3.2.1">
+<h5 data-number="1.1.3.2.1" class="anchored" data-anchor-id="interactions-with-earths-atmosphere"><span class="header-section-number">1.1.3.2.1</span> Interactions with Earth’s atmosphere</h5>
+<p>Some of the particles or molecules in the air would absorb part of electromagnetic waves, while others would change the direction of electromagnetic waves, and this phenomenon is called atmospheric scattering.</p>
+<p>There are three types of atmospheric scattering:</p>
 <ul>
-<li><p>surface</p>
-<p>BRDF</p>
-<p>Polarization</p>
-<p>Fluorensence</p></li>
-<li><p>atmospheric</p>
-<p>Rayleigh</p>
-<p>Mie</p>
-<p>Non selective</p></li>
+<li><p>Rayleigh scattering:</p>
+<p>It happens when particles are very small compared to the wavelength.</p>
+<p>Smaller wavelengths scatter easier, like blue light would scatter more than red light and yellow light. That’s why we would the sky is blue in the daytime, and the sun is yellow and red when sunset as the sun’s angle changes and the light should travel through more Earth’s atmosphere so that more blue light is scattered out.</p></li>
+<li><p>Mie scattering:</p>
+<p>It happens when the particles’ diameters are equal to the wavelength.</p></li>
+<li><p>Non selective scattering:</p>
+<p>It happens when the particles are much larger than the wavelength. For example, the clouds would scatter the visible light of the solar radiation. And that’s the reason why we could see the clouds are white in remote sensing images.</p></li>
+</ul>
+</section>
+<section id="interactions-with-earths-surface" class="level5" data-number="1.1.3.2.2">
+<h5 data-number="1.1.3.2.2" class="anchored" data-anchor-id="interactions-with-earths-surface"><span class="header-section-number">1.1.3.2.2</span> Interactions with Earth’s surface</h5>
+<p>After the solar radiation reached the Earth surface, it would either be absorbed, transmitted or reflected. As for remote sensing, the reflected electromagnetic waves could tell use the characteristics of the Earth’s surface.</p>
+<p>Several types of surface interactions: Bidirectional Reflectance Distribution Function (BRDF), Polarization, Fluorensence</p>
+</section>
+</section>
+</section>
+<section id="remote-sensing-data" class="level3" data-number="1.1.4">
+<h3 data-number="1.1.4" class="anchored" data-anchor-id="remote-sensing-data"><span class="header-section-number">1.1.4</span> Remote Sensing Data</h3>
+<section id="data-formats" class="level4" data-number="1.1.4.1">
+<h4 data-number="1.1.4.1" class="anchored" data-anchor-id="data-formats"><span class="header-section-number">1.1.4.1</span> Data formats</h4>
+<p>Mostly remote sensing data is stored in <strong>raster</strong>, and the file formats usually include GeoTiff and HDF, etc.</p>
+</section>
+<section id="four-resolutions" class="level4" data-number="1.1.4.2">
+<h4 data-number="1.1.4.2" class="anchored" data-anchor-id="four-resolutions"><span class="header-section-number">1.1.4.2</span> Four resolutions</h4>
+<p>Remote sensing data are based on four resolutions</p>
+<ul>
+<li><p>Spatial Resolution: The size of the raster cells.</p></li>
+<li><p>Spectral Resolution: The number of bands it records data in.</p>
+<p>There are several concepts related to spectral resolution:</p>
+<ul>
+<li><p>spectral signatures:</p>
+<p>We take values for each wavelength across the electromagnetic spectrum to create a spectral signature. Every feature on earth have a unique spectral signature</p></li>
+<li><p>atmospheric window:</p>
+<p>The observable wavelengths ranges that are not absorbed by the atmosphere and are transmitted through the atmosphere. Water vapour, ozone, carbon dioxide and atmospheric molecules blocks 100% of the gamma rays, x-rays, and most ultra-violet light.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://gisgeography.com/atmospheric-window/"><img src="pics/atmospheric window.png" class="img-fluid figure-img" width="633"></a></p>
+</figure>
+</div></li>
+</ul></li>
+<li><p>Radiometric Resolution: The ability of a sensor to identify and shows small differences.</p></li>
+<li><p>Temporal Resolution: The revisit time of the sensor.</p></li>
 </ul>
 </section>
 </section>
-<section id="remote-sensing-data" class="level3" data-number="2.1.4">
-<h3 data-number="2.1.4" class="anchored" data-anchor-id="remote-sensing-data"><span class="header-section-number">2.1.4</span> Remote Sensing Data</h3>
-<section id="data-formats" class="level4" data-number="2.1.4.1">
-<h4 data-number="2.1.4.1" class="anchored" data-anchor-id="data-formats"><span class="header-section-number">2.1.4.1</span> Data formats</h4>
 </section>
-<section id="four-resolutions" class="level4" data-number="2.1.4.2">
-<h4 data-number="2.1.4.2" class="anchored" data-anchor-id="four-resolutions"><span class="header-section-number">2.1.4.2</span> Four resolutions</h4>
-<p>Spatial Resolution</p>
-<p>Spectral Resolution</p>
-<p>Radiometric Resolution</p>
-<p>Temporal Resolution</p>
+<section id="application" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="application"><span class="header-section-number">1.2</span> Application</h2>
+<p>We have already known that each object on the Earth has their own spectral signature, and it is also real that the same object in different status would have different spectral signatures, like healthy tree would show different colors compared to pest-infested trees. In this way, one important application of spectral indicators is forest monitoring.</p>
+<p><span class="citation" data-cites="gupta2021">Gupta and Pandey (<a href="references.html#ref-gupta2021" role="doc-biblioref">2021</a>)</span> developed a systematic approach using Sentinel-2A spectral images to measure the forest health. The workflow could be seen as below.</p>
+<p><img src="img/Week1-workflow.png" class="img-fluid" width="677"></p>
+<p>In terms of data collection and preprocessing, <span class="citation" data-cites="gupta2021">Gupta and Pandey (<a href="references.html#ref-gupta2021" role="doc-biblioref">2021</a>)</span> collected Sentinel 2A data in May and October 2019, and resampled the data into 30m, then performed atmospheric correction. At the same time, they convert the digital numbers of top-of-atmosphere reflectance into bottom-of-atmosphere, which is the true surface reflectance.</p>
+<p>Then, they used reflectance estimation to calculate ARI 1, which shows signs of stressed related to pigments. They applied the Near Infrared(NIR) band to calculating the NDVI so that greenness vegetation are measured. The structure insensitive pigment index were also calculated. These three index were all calculated from spectral bands(see as follows). Canopy chlorophyll content is based on the inversion of PROSAIL.</p>
+<p><img src="img/Week1-forest-index-1.png" class="img-fluid"></p>
+<p>Finally, all the four index combined together to calculate the comprehensive Forest Health index. As we can see the figure below, different colors show various health conditions of the forest. The reddest area shows that the forests of this area are in poorest health, while the greenest area’s forests are the healthiest.</p>
+<p><img src="img/Week1-forest-index-2.png" class="img-fluid"></p>
 </section>
-</section>
-</section>
-<section id="application" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="application"><span class="header-section-number">2.2</span> Application</h2>
-</section>
-<section id="reflection" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">2.3</span> Reflection</h2>
+<section id="reflection" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">1.3</span> Reflection</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-gupta2021" class="csl-entry" role="doc-biblioentry">
+Gupta, Saurabh Kumar, and Arvind Chandra Pandey. 2021. <span>“Spectral Aspects for Monitoring Forest Health in Extreme Season Using Multispectral Imagery.”</span> <em>The Egyptian Journal of Remote Sensing and Space Science</em> 24 (3, Part 2): 579–86. <a href="https://doi.org/10.1016/j.ejrs.2021.07.001">https://doi.org/10.1016/j.ejrs.2021.07.001</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -381,13 +439,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      <a href="./index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./Week2-portfolio.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Portfolio</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Portfolio</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

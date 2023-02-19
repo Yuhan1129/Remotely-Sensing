@@ -2,23 +2,23 @@
   {
     "objectID": "Week1.html#summary",
     "href": "Week1.html#summary",
-    "title": "2  Introduction to Remote Sensing",
-    "section": "2.1 Summary",
-    "text": "2.1 Summary\n\n2.1.1 Learning Objectives\n\nHave a basic idea of remote sensing\nHave a understanding of remote sensing data\n\n\n\n2.1.2 Remote Sensors\nA remote sensor system it the instrument designed to detect and measure physical phenomena or environmental conditions from a distance. Remote sensors could be divided into two types as follow:\n\nPassive sensors systems: receive reflected energy\nActive sensors systems: emit electromagnetic waves, such as SAR\n\n\n\n2.1.3 Electromagnetic waves\nThe electromagnetic waves are used by remote sensors to detect and measure physical phenomena, also the carriers of information.\nThe basic properties of electromagnetic waves include wave length(\\(\\lambda\\)), velocity( \\(c\\),rate of oscillation), frequency(\\(v = 3\\times10^8 m/s\\)). They follow the relationship that \\(\\lambda = c/v\\).\n\n2.1.3.1 Related jargon\nThere are also some jargon about electromagnetic waves we need to know:\n\nElectromagnetic radiation(EMR): waves of an electromagnetic field, travel through space and carry radiant\nradiant energy: energy carried by EMR waves\nradiant flux: energy per unit of time\nshortwave radiation: energy from the sun\nsolar irradiacne: energy or solar power from the sun per unit area per unit time\nexitance/emmittance: energy leaving a surface per unit per unit time\n\n\n\n2.1.3.2 Interactions with Earth\n\nsurface\nBRDF\nPolarization\nFluorensence\natmospheric\nRayleigh\nMie\nNon selective\n\n\n\n\n2.1.4 Remote Sensing Data\n\n2.1.4.1 Data formats\n\n\n2.1.4.2 Four resolutions\nSpatial Resolution\nSpectral Resolution\nRadiometric Resolution\nTemporal Resolution"
+    "title": "1  Introduction to Remote Sensing",
+    "section": "1.1 Summary",
+    "text": "1.1 Summary\n\n1.1.1 Learning Objectives\n\nHave a basic idea of remote sensing\nHave a understanding of remote sensing data\n\n\n\n1.1.2 Remote Sensors\nA remote sensor system it the instrument designed to detect and measure physical phenomena or environmental conditions from a distance. Remote sensors could be divided into two types as follow:\n\nPassive sensors systems: receive reflected energy\nActive sensors systems: emit electromagnetic waves, such as SAR\n\n\n\n1.1.3 Electromagnetic waves\nThe electromagnetic waves are used by remote sensors to detect and measure physical phenomena, also the carriers of information.\nThe basic properties of electromagnetic waves include wave length(\\(\\lambda\\)), velocity( \\(c\\), rate of oscillation), frequency(\\(v = 3\\times10^8 m/s\\)). They follow the relationship that \\(\\lambda = c/v\\).\n\n1.1.3.1 Related jargon\nThere are also some jargon about electromagnetic waves we need to know:\n\nElectromagnetic radiation(EMR): waves of an electromagnetic field, travel through space and carry radiant\nradiant energy: energy carried by EMR waves\nradiant flux: energy per unit of time\nshortwave radiation: energy from the sun\nsolar irradiacne: energy or solar power from the sun per unit area per unit time\nexitance/emmittance: energy leaving a surface per unit per unit time\n\n\n\n1.1.3.2 Interactions with Earth\nWhen the electromagnetic waves travel to reach the ground stations or remote sensors, they would be affected by Earth’s atmosphere or surface.Thus, it’s important to know how would the Earth’s surface or atmosphere would change the radiant energy.\n\n1.1.3.2.1 Interactions with Earth’s atmosphere\nSome of the particles or molecules in the air would absorb part of electromagnetic waves, while others would change the direction of electromagnetic waves, and this phenomenon is called atmospheric scattering.\nThere are three types of atmospheric scattering:\n\nRayleigh scattering:\nIt happens when particles are very small compared to the wavelength.\nSmaller wavelengths scatter easier, like blue light would scatter more than red light and yellow light. That’s why we would the sky is blue in the daytime, and the sun is yellow and red when sunset as the sun’s angle changes and the light should travel through more Earth’s atmosphere so that more blue light is scattered out.\nMie scattering:\nIt happens when the particles’ diameters are equal to the wavelength.\nNon selective scattering:\nIt happens when the particles are much larger than the wavelength. For example, the clouds would scatter the visible light of the solar radiation. And that’s the reason why we could see the clouds are white in remote sensing images.\n\n\n\n1.1.3.2.2 Interactions with Earth’s surface\nAfter the solar radiation reached the Earth surface, it would either be absorbed, transmitted or reflected. As for remote sensing, the reflected electromagnetic waves could tell use the characteristics of the Earth’s surface.\nSeveral types of surface interactions: Bidirectional Reflectance Distribution Function (BRDF), Polarization, Fluorensence\n\n\n\n\n1.1.4 Remote Sensing Data\n\n1.1.4.1 Data formats\nMostly remote sensing data is stored in raster, and the file formats usually include GeoTiff and HDF, etc.\n\n\n1.1.4.2 Four resolutions\nRemote sensing data are based on four resolutions\n\nSpatial Resolution: The size of the raster cells.\nSpectral Resolution: The number of bands it records data in.\nThere are several concepts related to spectral resolution:\n\nspectral signatures:\nWe take values for each wavelength across the electromagnetic spectrum to create a spectral signature. Every feature on earth have a unique spectral signature\natmospheric window:\nThe observable wavelengths ranges that are not absorbed by the atmosphere and are transmitted through the atmosphere. Water vapour, ozone, carbon dioxide and atmospheric molecules blocks 100% of the gamma rays, x-rays, and most ultra-violet light.\n\n\n\n\n\n\nRadiometric Resolution: The ability of a sensor to identify and shows small differences.\nTemporal Resolution: The revisit time of the sensor."
   },
   {
     "objectID": "Week1.html#application",
     "href": "Week1.html#application",
-    "title": "2  Introduction to Remote Sensing",
-    "section": "2.2 Application",
-    "text": "2.2 Application"
+    "title": "1  Introduction to Remote Sensing",
+    "section": "1.2 Application",
+    "text": "1.2 Application\nWe have already known that each object on the Earth has their own spectral signature, and it is also real that the same object in different status would have different spectral signatures, like healthy tree would show different colors compared to pest-infested trees. In this way, one important application of spectral indicators is forest monitoring.\nGupta and Pandey (2021) developed a systematic approach using Sentinel-2A spectral images to measure the forest health. The workflow could be seen as below.\n\nIn terms of data collection and preprocessing, Gupta and Pandey (2021) collected Sentinel 2A data in May and October 2019, and resampled the data into 30m, then performed atmospheric correction. At the same time, they convert the digital numbers of top-of-atmosphere reflectance into bottom-of-atmosphere, which is the true surface reflectance.\nThen, they used reflectance estimation to calculate ARI 1, which shows signs of stressed related to pigments. They applied the Near Infrared(NIR) band to calculating the NDVI so that greenness vegetation are measured. The structure insensitive pigment index were also calculated. These three index were all calculated from spectral bands(see as follows). Canopy chlorophyll content is based on the inversion of PROSAIL.\n\nFinally, all the four index combined together to calculate the comprehensive Forest Health index. As we can see the figure below, different colors show various health conditions of the forest. The reddest area shows that the forests of this area are in poorest health, while the greenest area’s forests are the healthiest."
   },
   {
     "objectID": "Week1.html#reflection",
     "href": "Week1.html#reflection",
-    "title": "2  Introduction to Remote Sensing",
-    "section": "2.3 Reflection",
-    "text": "2.3 Reflection"
+    "title": "1  Introduction to Remote Sensing",
+    "section": "1.3 Reflection",
+    "text": "1.3 Reflection\n\n\n\n\nGupta, Saurabh Kumar, and Arvind Chandra Pandey. 2021. “Spectral Aspects for Monitoring Forest Health in Extreme Season Using Multispectral Imagery.” The Egyptian Journal of Remote Sensing and Space Science 24 (3, Part 2): 579–86. https://doi.org/10.1016/j.ejrs.2021.07.001."
   },
   {
     "objectID": "intro.html",
@@ -30,35 +30,35 @@
   {
     "objectID": "Week4-policy.html",
     "href": "Week4-policy.html",
-    "title": "5  Policy",
+    "title": "4  Policy",
     "section": "",
-    "text": "6 Summary\n\n\n7 Application\n\n\n8 Reflection"
+    "text": "5 Summary\n\n\n6 Application\n\n\n7 Reflection"
   },
   {
     "objectID": "Week3-corrections.html#summary",
     "href": "Week3-corrections.html#summary",
-    "title": "4  Corrections",
-    "section": "4.1 Summary",
-    "text": "4.1 Summary"
+    "title": "3  Corrections",
+    "section": "3.1 Summary",
+    "text": "3.1 Summary\n\n3.1.1 Correction\n\n3.1.1.1 Geometric Correction\nCauses: view angle(off-nadir, off directly down), topography, wind, rotation of the earth\nSolution:\n\nSteps:\n\n\nFind Ground Control Points(GCP) to match known points in the incorrect image and a reference correct dataset.\nThen use a transformation algorithm to model the actual coordinates, like linear regression with distorted x or y as the dependent or independent.\nLater, plot these and minimize the RMSE, whereas the lower RMSE the better model fits.\nLast, resample the final raster because the value of pixels in raster might shift slightly, and the common resample data including Nearest Neighbor, Linear, Cubic and Cubic Spline.\n\n\nTwo Methods:\n\nForward Mapping: Input to output\nThere would be points in the incorrect map falling outside the boundary of the correct map.\nBackward Mapping: Output to input\nThis method completely avoids problems with gaps and overlaps.\n\n\n3.1.1.2 Atmospheric Correction\nCauses: atmospheric scattering and topographic attenuation\nTips: There are both necessary and unnecessary atmospheric corrections. We only need to do the necessary atmospheric corrections.\nSolution:\n\nTypes:\n\n\nRelative correction\nAbsolute correction\nEmpirical line correction\n\n\n\n3.1.1.3 Orthorectification Correction\nCauses:\nSolution:\nCosine correction\nMinnaert correction\nStatistical Empirical correction\nC Correction (advancing the Cosine)\n\n\n3.1.1.4 Radiometric Calibration\nCauses:\nSolution:\nJargon\n\n\n\n3.1.2 Data Joining and Enhancement\nData Joining\nMosaicking\n\n3.1.2.1 Image Enhancement\ncontrast enhancement\nratio\nfiltering\npca\ntexture\nfusion"
   },
   {
     "objectID": "Week3-corrections.html#application",
     "href": "Week3-corrections.html#application",
-    "title": "4  Corrections",
-    "section": "4.2 Application",
-    "text": "4.2 Application"
+    "title": "3  Corrections",
+    "section": "3.2 Application",
+    "text": "3.2 Application"
   },
   {
     "objectID": "Week3-corrections.html#reflection",
     "href": "Week3-corrections.html#reflection",
-    "title": "4  Corrections",
-    "section": "4.3 Reflection",
-    "text": "4.3 Reflection"
+    "title": "3  Corrections",
+    "section": "3.3 Reflection",
+    "text": "3.3 Reflection"
   },
   {
     "objectID": "Week2-portfolio.html",
     "href": "Week2-portfolio.html",
-    "title": "3  Portfolio",
+    "title": "2  Portfolio",
     "section": "",
     "text": "see as:\nhttps://yuhan1129.github.io/Remotely-Sensing/presentation/OLI.html"
   },
@@ -74,7 +74,7 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "Gupta, Saurabh Kumar, and Arvind Chandra Pandey. 2021. “Spectral\nAspects for Monitoring Forest Health in Extreme Season Using\nMultispectral Imagery.” The Egyptian Journal of Remote\nSensing and Space Science 24 (3, Part 2): 579–86. https://doi.org/10.1016/j.ejrs.2021.07.001."
   },
   {
     "objectID": "index.html",
@@ -82,5 +82,54 @@
     "title": "LearningDairy",
     "section": "",
     "text": "Preface\nLearning Diary for remote sensing"
+  },
+  {
+    "objectID": "Week5-GEE.html",
+    "href": "Week5-GEE.html",
+    "title": "5  GEE",
+    "section": "",
+    "text": "6"
+  },
+  {
+    "objectID": "Week5-GEE.html#summary",
+    "href": "Week5-GEE.html#summary",
+    "title": "5  GEE",
+    "section": "5.1 Summary",
+    "text": "5.1 Summary"
+  },
+  {
+    "objectID": "Week5-GEE.html#application",
+    "href": "Week5-GEE.html#application",
+    "title": "5  GEE",
+    "section": "5.2 Application",
+    "text": "5.2 Application"
+  },
+  {
+    "objectID": "Week5-GEE.html#reflection",
+    "href": "Week5-GEE.html#reflection",
+    "title": "5  GEE",
+    "section": "5.3 Reflection",
+    "text": "5.3 Reflection"
+  },
+  {
+    "objectID": "Week4-policy.html#summary",
+    "href": "Week4-policy.html#summary",
+    "title": "4  Policy",
+    "section": "4.1 Summary",
+    "text": "4.1 Summary\nThe combination of spectral bands\nMany cities have published policies for city sustainble development, however,"
+  },
+  {
+    "objectID": "Week4-policy.html#application",
+    "href": "Week4-policy.html#application",
+    "title": "4  Policy",
+    "section": "4.2 Application",
+    "text": "4.2 Application"
+  },
+  {
+    "objectID": "Week4-policy.html#reflection",
+    "href": "Week4-policy.html#reflection",
+    "title": "4  Policy",
+    "section": "4.3 Reflection",
+    "text": "4.3 Reflection"
   }
 ]

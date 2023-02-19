@@ -1,12 +1,12 @@
 ---
-title: "Week5-GEE"
+title: "GEE"
 editor: visual
 ---
 
-# Summary
+## Summary
 
-# Application
+## Application
 
-# Reflection
+## Reflection
 
 # 

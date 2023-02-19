@@ -8,11 +8,11 @@ book:
   date: "1/25/2023"
   chapters:
     - index.qmd
-    - intro.qmd
     - Week1.qmd
     - Week2-portfolio.qmd
     - Week3-corrections.qmd
     - Week4-policy.qmd
+    - Week5-GEE.qmd
     - summary.qmd
     - references.qmd
 
